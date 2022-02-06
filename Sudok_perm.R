@@ -23,3 +23,7 @@ rand_row_perm<- function(x) {
   return(x)
 }
 
+rand_perm<- function(x){
+  return(rand_col_perm(rand_row_perm(x)))
+
+}
